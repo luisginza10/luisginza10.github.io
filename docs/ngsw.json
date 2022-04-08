@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1649357028633,
+  "timestamp": 1649414190127,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,12 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.24043081a237190c65ad.js",
+        "/main.3e846ca550f83f1a1cfc.js",
         "/manifest.webmanifest",
         "/polyfills.8c151b8375e767ff858f.js",
         "/runtime.0e49e2b53282f40c8925.js",
-        "/styles.c87e8ce19886e21f3d8c.css"
+        "/scripts.200de4faf1ce3c43352d.js",
+        "/styles.4d5d6df4bd9945e4edde.css"
       ],
       "patterns": [
         "https:\\/\\/cdnjs\\.cloudflare\\.com\\/ajax\\/libs\\/font-awesome\\/4\\.7\\.0\\/css\\/font-awesome\\.min\\.css",
@@ -55,15 +56,12 @@
     {
       "name": "data-api",
       "patterns": [
-        "https:\\/\\/192\\.168\\.0\\.11:443\\/api\\/",
         "https:\\/\\/192\\.168\\.0\\.11\\/api\\/facturas\\/",
-        "https:\\/\\/www\\.carqueryapi\\.com\\/api\\/0\\.3\\/",
-        "http:\\/\\/localhost:9090\\/api",
-        "http:\\/\\/192\\.168\\.0\\.11:443\\/api"
+        "https:\\/\\/www\\.carqueryapi\\.com\\/api\\/0\\.3\\/"
       ],
       "strategy": "freshness",
       "maxSize": 5,
-      "maxAge": 3000000,
+      "maxAge": 36000000,
       "timeoutMs": 5000,
       "cacheQueryOptions": {
         "ignoreVary": true
@@ -81,12 +79,13 @@
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "9fb1f401871fc5e89684c67216d2f2571cfbf397",
-    "/main.24043081a237190c65ad.js": "f12141a8f48cca02dc5104417d680828d6dcdd43",
+    "/index.html": "7e06b889afb0531ce0701fe70ce9a2d626c6caad",
+    "/main.3e846ca550f83f1a1cfc.js": "42dfb94732464c32a57fb9a795d8f9477c47ae09",
     "/manifest.webmanifest": "6cf6ee0e6a3e90826db68d3145a372e4bb6ef268",
     "/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/styles.c87e8ce19886e21f3d8c.css": "fb65905e98d78ff3a0549cfdf299caa40ed832f0"
+    "/scripts.200de4faf1ce3c43352d.js": "ba674bc7470525f676883731b1cb19d6f407c745",
+    "/styles.4d5d6df4bd9945e4edde.css": "44893ca8418879835bf7a3c921a6f384d94dd339"
   },
   "navigationUrls": [
     {
