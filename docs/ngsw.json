@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1653577949741,
+  "timestamp": 1658925667894,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/6.1fb47417ad9e1fc0b008.js",
         "/favicon.ico",
         "/index.html",
-        "/main.17d4121ae0ac57b9f03a.js",
+        "/main.5cd9826fa5cc1b5dc7de.js",
         "/manifest.webmanifest",
         "/polyfills.8c151b8375e767ff858f.js",
         "/runtime.eba947582a3fd1d0b69a.js",
@@ -51,7 +51,8 @@
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
         "/assets/icons/icon-96x96.png",
-        "/assets/images/logo.jpg"
+        "/assets/images/logo.jpg",
+        "/assets/images/vmx_48px.png"
       ],
       "patterns": []
     }
@@ -62,6 +63,7 @@
       "patterns": [
         "https:\\/\\/192\\.168\\.0\\.11\\/api\\/[^/]*",
         "https:\\/\\/www\\.avising\\.online\\/api\\/[^/]*",
+        "https:\\/\\/vimaxsa\\.com\\/api\\/[^/]*",
         "https:\\/\\/www\\.carqueryapi\\.com\\/api\\/0\\.3\\/"
       ],
       "strategy": "freshness",
@@ -78,19 +80,20 @@
     "/4.92a95a85197a883f0ab7.js": "94eaf503115fb762a0c2c5c3880d3f2cde00a36b",
     "/5.b3d4dce83bcc81ded725.js": "850f79ef3228553541b43d44061809fb5b1f76a7",
     "/6.1fb47417ad9e1fc0b008.js": "3f4f55636c58b7bd4fae663211527059cc2ce1ae",
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/icons/icon-128x128.png": "fb786e317068b5730c585b8018148b4b7aeab476",
+    "/assets/icons/icon-144x144.png": "ecde6af37fe8be547d9342be277b8acd5595a882",
+    "/assets/icons/icon-152x152.png": "e7b65b10e7d5024734cfdb7475af80dd6f96a441",
+    "/assets/icons/icon-192x192.png": "82613ffddcbc3310151dd720faf85aefd4ae0935",
+    "/assets/icons/icon-384x384.png": "3aa2c19aac55fc35c08460e385884902ecb48340",
+    "/assets/icons/icon-512x512.png": "69e7942ff0b3bafee2e0a69033e8cfea2d1245a3",
+    "/assets/icons/icon-72x72.png": "b277654230fe630c9d73667a16f549d4626878fb",
+    "/assets/icons/icon-96x96.png": "d06b1600d0faaecfb59df91b5957596519ded263",
     "/assets/images/logo.jpg": "9149f1ce418a82523313486089801631b5f70643",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "c07c5a41c565941f793ed878e840bf90a0c9fa3d",
-    "/main.17d4121ae0ac57b9f03a.js": "7b30dcc0a0b93007cf120b0a44df279a8cfc2234",
-    "/manifest.webmanifest": "6cf6ee0e6a3e90826db68d3145a372e4bb6ef268",
+    "/assets/images/vmx_48px.png": "cddfea57ab88abd0a16c48ca55685bb096698419",
+    "/favicon.ico": "295652fe378bac69069d37395fe22d79c7ce70b7",
+    "/index.html": "3c7db37e95039f833eb2b90b75dc03c64396d4c8",
+    "/main.5cd9826fa5cc1b5dc7de.js": "1c19b23d3084b38d781aaeaab7f0aa47d5acce7e",
+    "/manifest.webmanifest": "7c2a9b0f632eb199fe6d325dd2618311d9ea4a18",
     "/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/runtime.eba947582a3fd1d0b69a.js": "89f3f79e1351f0c1d303a34b787083f5a5b3dcdb",
     "/scripts.200de4faf1ce3c43352d.js": "ba674bc7470525f676883731b1cb19d6f407c745",
