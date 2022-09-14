@@ -6,8 +6,76 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsR9vJbCmW537JT_T2JzEzC-knlUPnA6w&callback=initMap">
+  </script>
+  <script>
+    //variable locales
+    let map;
+    let marker;
+    //geo
+    let watchID;
+    let geoLoc;
+
+    function initMap(){
+        const myLatlng = {lat: -25.363, lng: 131.044};
+        map = new google.maps.Map(document.getElementById("map"),{
+          zoom: 4,
+          center: myLatlng,
+        });
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map,
+          title:"hola mundo"
+        });
+        //marker.setPosition(myLatlng);
+        getPosition();
+    }
+    function getPosition(){
+      if(navigator.geolocation){
+        var options = {timeout:60000};
+        geoLoc = navigator.geolocation;
+        watchID = geoLoc.watchPosition(showLocationOnMap,errorHandler,options);
+      }else{
+        alert("explorador no soporta geolocalizacion");
+      }
+    }
+    function showLocationOnMap(position){
+        var latitud = position.coords.latitude;
+        var longitud = position.coords.longitude;
+        console.log("Latitud: "+latitud+" Longitud: "+longitud);
+
+        const myLatlng = {lat: latitud, lng:longitud};
+        marker.setPosition(myLatlng);
+        map.setCenter(myLatlng);
+    }
+    function errorHandler(err){
+      if(err.code==1){
+        alert("Error: Acceso denegado!");
+      }else if(err.code==2){
+        alert("Error: Posicion no existe o no encuentra!");
+      }
+    }
+  </script>
+  <style type="text/css">
+    #map {
+      height: 100%;
+    }
+
+    /* 
+    * Optional: Makes the sample page fill the window. 
+    */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 <link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
 <body>
+  <div id="map"></div>
+  
   <app-root></app-root>
 <script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.1a3c78b07cd6f16c6e9a.js" nomodule defer></script><script src="polyfills-es2015.1f913f16a2d346cc8bdc.js" type="module"></script><script src="main-es2015.63eb9962ac7b2082f211.js" type="module"></script><script src="main-es5.63eb9962ac7b2082f211.js" nomodule defer></script></body>
 </html>
