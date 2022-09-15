@@ -6,6 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsR9vJbCmW537JT_T2JzEzC-knlUPnA6w&callback=initMap">
   </script>
@@ -32,10 +33,12 @@
         getPosition();
     }
     function getPosition(){
+      //https://developer.mozilla.org/es/docs/Web/API/Geolocation/getCurrentPosition
       if(navigator.geolocation){
         var options = {timeout:60000};
         geoLoc = navigator.geolocation;
-        watchID = geoLoc.watchPosition(showLocationOnMap,errorHandler,options);
+        //watchID = geoLoc.watchPosition(showLocationOnMap,errorHandler,options);
+        watchID = geoLoc.getCurrentPosition(showLocationOnMap,errorHandler,options);
       }else{
         alert("explorador no soporta geolocalizacion");
       }
@@ -72,10 +75,12 @@
       padding: 0;
     }
   </style>
-<link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
-<body>
-  <div id="map"></div>
-  
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.9db936f9d7790eaf00be.css"></head>
+<body class="mat-typography">
+  <!--<div id="map"></div>-->
   <app-root></app-root>
-<script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.1a3c78b07cd6f16c6e9a.js" nomodule defer></script><script src="polyfills-es2015.1f913f16a2d346cc8bdc.js" type="module"></script><script src="main-es2015.63eb9962ac7b2082f211.js" type="module"></script><script src="main-es5.63eb9962ac7b2082f211.js" nomodule defer></script></body>
+<script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.1a3c78b07cd6f16c6e9a.js" nomodule defer></script><script src="polyfills-es2015.1f913f16a2d346cc8bdc.js" type="module"></script><script src="scripts.74d86700c170f16073f1.js" defer></script><script src="main-es2015.5ba359821a412e42e451.js" type="module"></script><script src="main-es5.5ba359821a412e42e451.js" nomodule defer></script></body>
 </html>
