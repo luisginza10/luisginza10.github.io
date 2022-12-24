@@ -1,86 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
-  <title>Gelocation</title>
+  <title>CameraApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!--
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsR9vJbCmW537JT_T2JzEzC-knlUPnA6w&callback=initMap">
-  </script>
-  <script>
-    //variable locales
-    let map;
-    let marker;
-    //geo
-    let watchID;
-    let geoLoc;
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
 
-    function initMap(){
-        const myLatlng = {lat: -25.363, lng: 131.044};
-        map = new google.maps.Map(document.getElementById("map"),{
-          zoom: 15,
-          center: myLatlng,
-        });
-        marker = new google.maps.Marker({
-          position: myLatlng,
-          map,
-          title:"hola mundo"
-        });
-        //marker.setPosition(myLatlng);
-        getPosition();
-    }
-    function getPosition(){
-      //https://developer.mozilla.org/es/docs/Web/API/Geolocation/getCurrentPosition
-      if(navigator.geolocation){
-        var options = {timeout:60000};
-        geoLoc = navigator.geolocation;
-        //watchID = geoLoc.watchPosition(showLocationOnMap,errorHandler,options);
-        watchID = geoLoc.getCurrentPosition(showLocationOnMap,errorHandler,options);
-      }else{
-        alert("explorador no soporta geolocalizacion");
-      }
-    }
-    function showLocationOnMap(position){
-        var latitud = position.coords.latitude;
-        var longitud = position.coords.longitude;
-        console.log("Latitud: "+latitud+" Longitud: "+longitud);
-
-        const myLatlng = {lat: latitud, lng:longitud};
-        marker.setPosition(myLatlng);
-        map.setCenter(myLatlng);
-    }
-    function errorHandler(err){
-      if(err.code==1){
-        alert("Error: Acceso denegado!");
-      }else if(err.code==2){
-        alert("Error: Posicion no existe o no encuentra!");
-      }
-    }
-  </script>
-  <style type="text/css">
-    #map {
-      height: 100%;
-    }
-
-    /* 
-    * Optional: Makes the sample page fill the window. 
-    */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-  -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="styles.9db936f9d7790eaf00be.css"></head>
-<body class="mat-typography">
-  <!--<div id="map"></div>-->
+<body>
   <app-root></app-root>
-<script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.1a3c78b07cd6f16c6e9a.js" nomodule defer></script><script src="polyfills-es2015.1f913f16a2d346cc8bdc.js" type="module"></script><script src="scripts.74d86700c170f16073f1.js" defer></script><script src="main-es2015.f81c8f83ad44b1b80c04.js" type="module"></script><script src="main-es5.f81c8f83ad44b1b80c04.js" nomodule defer></script></body>
-</html>
+<script src="runtime.69bc8b99d9a16cdd.js" type="module"></script><script src="polyfills.856f339c76e1a337.js" type="module"></script><script src="main.b33ad5ff83d89668.js" type="module"></script>
+
+</body></html>
